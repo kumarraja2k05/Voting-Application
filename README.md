@@ -17,3 +17,6 @@
   # 8) Release the results
   
   # #Execution will begin from main.py file.
+  
+  ---Note---
+  Default Password for admin is 1234.
