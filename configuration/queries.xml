@@ -1,0 +1,26 @@
+<SQL_COMMANDS>
+<SELECT_ALL>select * from {}</SELECT_ALL>
+<ELECTION_STATUS>select status from Election_Year where year={}</ELECTION_STATUS>
+<ADD_ELECTION>insert into Election_Year values({},{})</ADD_ELECTION>
+<DEL_CUR_VOTE_RECORD>delete from VoteRecord where user_id!=-1</DEL_CUR_VOTE_RECORD>
+<CLOSE_ELECTIONS>Update Election_Year set status=2 where year={}</CLOSE_ELECTIONS>
+<COUNT_VOTE_RECORD>select count(*) from VoteRecord where vote_id={}</COUNT_VOTE_RECORD>
+<ADD_ELECTION_RESULT>insert into Result values({},{},{})</ADD_ELECTION_RESULT>
+<ADD_PARTY>insert into Party values({},"{}")</ADD_PARTY>
+<GET_USER_VOTE_RECORD>select * from VoteRecord where user_id={}</GET_USER_VOTE_RECORD>
+<GIVE_VOTE>insert into VoteRecord values({},{},{})</GIVE_VOTE>
+<PREV_RESULT>select P.party_name, R.votes from Result R, Party P where election_year={} and P.party_id=R.party_id</PREV_RESULT>
+<GET_ROLE>select role_id from Role where user_id={}</GET_ROLE>
+<GET_APPROVAL>select is_approved from Approval where user_id='{}'</GET_APPROVAL>
+<ADD_ROLE>insert into project2.Role values({},{})</ADD_ROLE>
+<ADD_APPROVAL>insert into project2.Approval values({},{})</ADD_APPROVAL>
+<ADD_USER>insert into project2.User values({},"{}","{}",{},"{}",{},"{}","{}","{}","{}")</ADD_USER>
+<GET_COUNT_OF_RECORDS>select count(*) from {}</GET_COUNT_OF_RECORDS>
+<GET_USER_RECORDS>select * from User where user_id={}</GET_USER_RECORDS>
+<GET_AADHAR>select aadhaar_number from User</GET_AADHAR>
+<GET_DOB>select dob from User where user_id={}</GET_DOB>
+<UPDATE_ROLE>Update Role set role_id=1 where user_id={}</UPDATE_ROLE>
+<UPDATE_USER>update User set {}="{}" where user_id={}</UPDATE_USER>
+<APPROVE_USER>select u.user_id, u.dob, a.is_approved from User u, Approval a where u.user_id=a.user_id and a.is_approved=0</APPROVE_USER>
+<UPDATE_APPROVAL>update Approval set is_approved={} where user_id={}</UPDATE_APPROVAL>
+</SQL_COMMANDS>

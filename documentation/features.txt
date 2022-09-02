@@ -1,0 +1,30 @@
+class main:
+    def login():
+        # enter Id and Password
+        # fetch result from the table,
+        
+        # if role=="admin 1":
+        #     class admin():
+                # all operations:
+                # 1) check all the pending new user approvals
+                # 2) check all the pending old user details modification
+                # 3) approve user as admin.
+                # 4) add party to stand in election tables
+                # 5) start election, and send notification mail to all users to vote within 24 hrs.
+                # 6) close the voting.
+                # 7) del user.
+                # 8) Release the results
+                # pass
+        # elif role=="normal_user 0" and if approved by admin:
+        #     class normal_user:
+                # 1) edit the details
+                # 2) vote 
+                # 3) check if i am approved
+                # 4) apply for becoming as admin.
+                # pass
+        pass
+
+    def logout(): 
+        pass# just press 0 and return
+    def Sign_up():
+        pass # create_new_user()
